@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linkedin Login</title>
+</head>
+<body>
+    <a href="https://www.linkedin.com"><img src="linkedin-logo.png"></a>  
+    <div class="sign-in-container">
+        <div class="upper-sign-in">
+            <h1>Sign in</h1>
+            <p>Stay updated on your professional world.</p>
+
+            <form>
+                <input class="text-input" type="text" placeholder="Email or phone">
+                <br>
+                <input class="text-input" id="Password-input" type="password" placeholder="Password"><span class="show-pw"><button onclick="ShowPW()">Show</button></span>
+                <a class="big-link forgot-password-link" href="https://www.linkedin.com">Forgot password?</a>
+                <br>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="keep-logged-in" name="keep-logged-in" value="Keep-logged-in">
+                    <label id="keep-logged-in-text" for="keep-logged-in">Keep me logged in</label>
+                </div>
+                <br>
+                <input class="sign-in-btn" type="submit" value="Sign in">
+            </form>
+            <hr>
+            <p class="border-or"><span class="border-or-span">or</span></p>
+        </div>
+        <div class="lower-sign-in">
+            <p>
+                By clicking Continue, you agree to LinkedIn’s <a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>, <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and <a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a>.
+            </p>
+            <button type="button"><img class="button-logos" src="Google-logo.png"> Continue with Google</button>
+            <button type="button"><img class="button-logos apple-logo" src="Apple_logo.svg">Continue with Apple</button>
+        </div>
+    </div>
+    <h4>New to LinkedIn? <a class="big-link join-now-link" href="https://www.linkedin.com/signup/cold-join?source=guest_homepage-basic_nav-header-signin">Join now</a></h4>
+    <footer>
+        <div class="linkedin-copyright">
+            <img src="LinkedIn-Black-Logo.svg" class="footer-logo">
+            <p>© 2025</p> 
+        </div>
+        <div class="footer-links-div">
+            <a href="#" class="footer-links">User Agreement</a>
+            <a href="#" class="footer-links">Privacy Policy</a>
+            <a href="#" class="footer-links">Your California Privacy Choices</a>
+            <a href="#" class="footer-links">Community Guidelines</a>
+            <a href="#" class="footer-links">Cookie Policy</a>
+            <a href="#" class="footer-links">Copyright Policy</a>
+            <a href="#" class="footer-links">Send Feedback</a>                            <select id="language-selector" name="languages">
+                  <option value="none" selected disabled hidden>Language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Espanol</option>
+                  <option value="German">Deutsch</option>
+                  <option value="Italian">Italiano</option>
+            </form>
+        </div>
+    </footer>
+    <script>
+        function ShowPW() {
+          var x = document.getElementById("Password-input");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+          event.preventDefault();
+        }
+    </script>
+</body>
+</html>

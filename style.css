@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+}
+
+body img {
+    width: 130px;
+    margin: 23px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sign-in-container {
+    margin: auto;
+    background-color: white;
+    width: 350px;
+    height: 85%;
+    padding: 15px;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+.sign-in-container h1 {
+    font-weight: 500;
+}
+
+.upper-sign-in > * {
+    padding: 5px;
+}
+
+.upper-sign-in p {
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.upper-sign-in form > * {
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.text-input {
+    width: 90%;
+    height: 30px;
+    font-size: 16px;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.upper-sign-in a {
+    display: block;
+    text-decoration: none;
+    padding-left: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: -15px;
+    margin-top: -15px;
+    width: 40%;
+    color: #0072b1;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upper-sign-in a:hover {
+    text-decoration: underline;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.checkbox-div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#keep-logged-in {
+    position: absolute;
+    left: 5px;
+    height: 18px;
+    width: 18px;
+    margin-right: -8px;
+}
+
+#keep-logged-in-text {
+    position: absolute;
+    left: 27px;
+    bottom: -9px;
+}
+
+.sign-in-btn {
+    width: 97%;
+    height: 50px;
+    color: white;
+    background-color: #0072b1;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sign-in-btn:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.border-or {
+    text-align: center;
+    margin: -16px;
+    color: gray;
+}
+
+.border-or-span {
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lower-sign-in {
+    margin-top: 20px;
+}
+
+.lower-sign-in p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.lower-sign-in a {
+    text-decoration: none;
+    color: #0072b1;
+    font-weight: 600;
+}
+
+.lower-sign-in a:hover {
+    text-decoration: underline;
+}
+
+.lower-sign-in button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 97%;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.lower-sign-in button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.lower-sign-in button:nth-of-type(2) {
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+
+.button-logos {
+    width: 17px;
+    display: block;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+.apple-logo {
+    padding-bottom: 3px;
+}
+
+h4 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    font-weight: 400;
+
+}
+
+.join-now-link {
+    width: 75px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #0072b1;
+    font-weight: 500;
+}
+
+.join-now-link:hover {
+    text-decoration: underline;
+    background-color: lightblue;
+}
+
+.show-pw {
+    position: relative;
+    bottom: 50px;
+    left: 242px;
+}
+
+.show-pw button {
+    width: 75px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    color: #0072b1;
+    font-weight: 600;
+    border: none;
+    height: 28px;
+    width: 70px;
+}
+
+.show-pw button:hover {
+    background-color: lightblue;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (min-width: 770px) {
+    body {
+        background-color: #F8F8F8;
+    }
+
+    .sign-in-container {
+        box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.05);
+        border-radius: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    footer p {
+        font-size: 12px;
+        padding-top: 20px;
+        margin-left: -25px;
+    }
+    
+    .footer-links {
+        font-size: 12px;
+        color: gray;
+        text-decoration: none;
+        margin: 12px 10px;
+        font-weight: 500;
+    }
+    
+    .footer-links:hover {
+        text-decoration: underline;
+    }
+    
+    .linkedin-copyright {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    
+    .footer-logo {
+        width: 70px;
+    }
+    
+    #language-selector {
+        color: gray;
+        border: none;
+        font-size: 12px;
+        background-color: #F8F8F8;
+        margin-left: 4px;
+    }
+
+    select {
+        font-weight: 600;
+    }
+
+    #language-selector:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
